@@ -1,3 +1,5 @@
+package hexlet.code;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -32,7 +34,7 @@ public class Application3 {
                 preparedStatement.setString(1, "Tommy");
                 int rowsDeleted = preparedStatement.executeUpdate();
                 if (rowsDeleted > 0) {
-                    System.out.println("User 'Tommy' was deleted successfully.");
+                    System.out.println("hexlet.code.User 'Tommy' was deleted successfully.");
                 } else {
                     System.out.println("No user found with the name 'Tommy'.");
                 }
